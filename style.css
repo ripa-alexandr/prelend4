@@ -7,6 +7,18 @@ html {
     background-position: 23%;
     background-size: cover;
 }
+.header {
+    background: rgba(58,1,1,0.4);
+}
+.header .container {
+    padding: .5em 1em;
+}
+.header .logo-box {
+    width: 215px;
+    margin: 0 auto;
+    height: 3rem;
+    position: relative;
+}
 .question-wrapper {
     padding-top: 15px;
 }
@@ -84,6 +96,7 @@ html {
     justify-content: space-between;
     margin-top: 60px;
     width: 30%;
+    margin-bottom: 15px;
 }
 .btn-group button {
     display: block;
