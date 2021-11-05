@@ -1,12 +1,3 @@
-/* body,
-html {
-    background: url('img/background_1.jpg') center center no-repeat;
-    min-height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 23%;
-    background-size: cover;
-} */
 body:before {
     content: "";
     display: block;
@@ -21,7 +12,8 @@ body:before {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+    background-position: 23%;
+}
 .question-wrapper {
     padding-top: 15px;
 }
