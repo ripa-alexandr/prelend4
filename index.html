@@ -47,19 +47,19 @@
                 <h1 class="question-head">What's your favorite size?</h1>
             </div>
             <div class="col-6 col-sm-3 float-left">
-                <a href="#"><img src="img/1.jpg" class="answer-img"></a>
+                <a href="#"><img id="s" src="img/1.jpg" class="answer-img"></a>
                 <p class="answer-text">S</p>
             </div>
             <div class="col-6 col-sm-3 float-left">
-                <a href="#"><img src="img/2.jpg" class="answer-img"></a>
+                <a href="#"><img id="m" src="img/2.jpg" class="answer-img"></a>
                 <p class="answer-text">M</p>
             </div>
             <div class="col-6 col-sm-3 float-left">
-                <a href="#"><img src="img/3.jpg" class="answer-img"></a>
+                <a href="#"><img id="l" src="img/3.jpg" class="answer-img"></a>
                 <p class="answer-text">L</p>
             </div>
             <div class="col-6 col-sm-3 float-left">
-                <a href="#"><img src="img/4.jpg" class="answer-img"></a>
+                <a href="#"><img id="xl" src="img/4.jpg" class="answer-img"></a>
                 <p class="answer-text">XL</p>
             </div>
         </div>
@@ -87,19 +87,19 @@
                 <h1 class="question-head">What kind of women do you like?</h1>
             </div>
             <div class="col-6 col-sm-3 float-left">
-                <a href="#"><img src="img/5.jpg" class="answer-img"></a>
+                <a href="#"><img id="asian" src="img/5.jpg" class="answer-img"></a>
                 <p class="answer-text">Asian</p>
             </div>
             <div class="col-6 col-sm-3 float-left">
-                <a href="#"><img src="img/6.jpg" class="answer-img"></a>
+                <a href="#"><img id="fair" src="img/6.jpg" class="answer-img"></a>
                 <p class="answer-text">Fair</p>
             </div>
             <div class="col-6 col-sm-3 float-left">
-                <a href="#"><img src="img/7.jpg" class="answer-img"></a>
+                <a href="#"><img id="brown" src="img/7.jpg" class="answer-img"></a>
                 <p class="answer-text">Brown</p>
             </div>
             <div class="col-6 col-sm-3 float-left">
-                <a href="#"><img src="img/8.jpg" class="answer-img"></a>
+                <a href="#"><img id="dark" src="img/8.jpg" class="answer-img"></a>
                 <p class="answer-text">Dark</p>
             </div>
         </div>
@@ -152,8 +152,12 @@
     <!-- Local JS -->
     <script>
         $(function() {
-            $('#st1 .answer-img').click(function() {
+            $('#st1 .answer-img').click(function(event) {
                 $("#st1").css("display", "none");
+                $('#asian').attr('src', 'img/' + event.target.id + '-asian.jpg');
+                $('#fair').attr('src', 'img/' + event.target.id + '-fair.jpg');
+                $('#brown').attr('src', 'img/' + event.target.id + '-brown.jpg');
+                $('#dark').attr('src', 'img/' + event.target.id + '-dark.jpg');
                 $("#st2").css("display", "block");
             });
 
